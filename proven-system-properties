@@ -1,0 +1,3 @@
+proven.hazelcast.members=172.16.238.0-15
+proven.hazelcast.member.port=5701
+fish.payara.classloading.delegate=false
