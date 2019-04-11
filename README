@@ -1,8 +1,13 @@
+# Create a cluster of 2 proven containers, a hazelcast management container and influxdb
+
 
 # deploy the stack
 docker stack deploy --compose-file docker-compose.yml hc
 
-http://localhost:9080/hazelcat-mancenter
+http://localhost:9080/hazelcast-mancenter
+
+# scale to 3 proven containers 
+docker service scale hc_proven=3
 
 # remove the stack
 docker stack rm hc
